@@ -1,0 +1,44 @@
+ORM: Entity Framework Core
+NuGet = gerenciador de pacotes
+
+API: trocar dados entre sistemas diferentes, na maior parte 
+das vez essas trocas de dados tem como objetivo automatizar 
+processos manuais e/ou permitir a criação de novas 
+funcionalidades.
+
+dotnet tool install --global dotnet-ef = para baixar o ORM
+como global
+
+dotnet new = para olhar os projetos para criar
+dotnet new webapi = para criar uma api
+
+dotnet add package Microsoft.EntityFrameworkCore.Design --version 5.0.9
+para baixar os pacotes
+
+dotnet run = para executar, e depois abrir no navegador 
+
+arquivo WeatherForecast = arquivo de teste que vem durante a 
+criaçao, colocar /WeatherForecast depois da rota no browser
+
+pacotes:
+dotnet add package Microsoft.EntityFrameworkCore --version 5.0.9
+para ter acesso a mais funcionalidades do EF
+
+dotnet add package Microsoft.EntityFrameworkCore.Design --version 5.0.9
+Para trabalhar migrations
+
+dotnet add package Pomelo.EntityFrameworkCore.MySql --version 5.0.1
+fara a conexao entre o ASP.NET Core e o banco
+
+using System.ComponentModel.DataAnnotations; no arquivos de modelo
+serve para especificar funcionalidades extras. Ex: uso de chave primaria,
+quantidade minima de caracteres, ou se o campi é nulo.
+
+using System.Threading.Tasks = para trabalhar com programaçao
+assicorna
+
+using Microsoft.AspNetCore.Mvc = responsavel pela criação das rotas
+
+dotnet ef migrations add = para criar uma migration
+
+dotnet ef database update = para rodar as migrations
